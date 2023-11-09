@@ -8,6 +8,10 @@ import Quiz from './models/quizDataModel.js';
 
 const MONGO_URI = process.env.MONGO_URI;
 
+console.log(process.env.MONGO_URI);
+
+console.log(process.env);
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
