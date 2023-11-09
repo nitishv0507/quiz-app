@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import Quiz from './models/quizDataModel.js';
 
 
-const MONGO_URI = 'mongodb+srv://admin:NitishVerma@cluster0.a4iqsms.mongodb.net/EduQuiz?retryWrites=true&w=majority';
+const MONGO_URI = process.env.MONGO_URI;
 
 const app = express();
 const PORT = process.env.PORT || 3000;
